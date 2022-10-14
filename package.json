@@ -11,8 +11,13 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
 
+
     "@types/uuid": "^8.3.4",
 
+    "boxicons": "^2.1.4",
+
+
+    "@types/uuid": "^8.3.4",
     "boxicons": "^2.1.4",
 
     "node-sass": "^7.0.3",
