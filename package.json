@@ -10,11 +10,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-<<<<<<< HEAD
     "@types/uuid": "^8.3.4",
-=======
     "boxicons": "^2.1.4",
->>>>>>> 489ae52b0e6c26db8bf6a9fd1c1f2ac5f85b3f95
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
