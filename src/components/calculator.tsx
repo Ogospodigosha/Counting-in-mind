@@ -2,8 +2,13 @@ import React from 'react';
 import store from './store';
 
 import s from '../scss/calculator.module.scss';
+import {TaskObjType} from "../App";
 
-function Calculator() {
+type CalculatorPropsType  = {
+    tasks: TaskObjType[]
+}
+
+function Calculator(props: CalculatorPropsType ) {
   return (
     <section className={s.calculator}>
       <div className={s.calculator__display}>
