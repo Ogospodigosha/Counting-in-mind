@@ -5,7 +5,7 @@ import { BiX } from 'react-icons/bi';
 import s from '../scss/calculator.module.scss';
 
 function Calculator() {
-  const [inputVal, setInputVal] = React.useState([]);
+  const [inputVal, setInputVal] = React.useState('');
 
   const onClickBtn = (value) => {
     setInputVal(inputVal + String(value));
