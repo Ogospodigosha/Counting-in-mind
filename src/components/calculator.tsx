@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import store from './store';
 import { BiX } from 'react-icons/bi';
 
 import s from '../scss/calculator.module.scss';
 
 function Calculator() {
-  const [inputVal, setInputVal] = React.useState([]);
+  const [inputVal, setInputVal] = useState<string>("");
 
-  const onClickBtn = (value) => {
+
+  const onClickBtn = (value:string | number) => {
+
     setInputVal(inputVal + String(value));
   };
 

@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit" />
+    <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/@jest-expect-utils-npm-29.2.0-fff85c0965-dae6df9292.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/@jest-types-npm-29.2.0-37b80da29e-6b04cbb233.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/@jridgewell-trace-mapping-npm-0.3.17-57578fd48c-9d703b859c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/@types-uuid-npm-8.3.4-7547f4402c-6f11f3ff70.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/cssdb-npm-7.0.2-8456ae9725-521957cc26.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/diff-sequences-npm-29.2.0-a03dd6ddbd-e7b874cc7a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/expect-npm-29.2.0-6972bfa746-1d309c5218.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/jest-diff-npm-29.2.0-78476192b3-149381e8ba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/jest-get-type-npm-29.2.0-47b45861f7-e396fd880a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/jest-matcher-utils-npm-29.2.0-51961ffe25-8beeb95677.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/jest-message-util-npm-29.2.0-cf68b35b8d-de74c6aeff.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/jest-util-npm-29.2.0-21f9e53143-c1fc26008b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/pretty-format-npm-29.2.0-026721d909-f5ef6a8485.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/regenerator-runtime-npm-0.13.10-57e3c1406b-09893f5a9e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/shell-quote-npm-1.7.4-b337567168-2874ea9c1a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.yarn/cache/uuid-npm-9.0.0-46c41e3e43-8dd2c83c43.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/@jest-expect-utils-npm-29.1.2-4ea76b5f23-31c2a690b5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/@jest-types-npm-29.1.2-0dbe55dc45-697fc72c37.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/@jridgewell-trace-mapping-npm-0.3.16-f11a7d5a44-881fa21ce0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/cssdb-npm-7.0.1-215a5ab052-4b4de59864.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/diff-sequences-npm-29.0.0-1a0fe796f4-2c084a3db0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/electron-to-chromium-npm-1.4.281-2181cd779e-8c64a7b8a6.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.yarn/cache/electron-to-chromium-npm-1.4.282-5d6c8ff32c-6cc5f05596.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/expect-npm-29.1.2-34e14175c0-578c61459e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/jest-diff-npm-29.1.2-e2d025d72e-0c97741559.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/jest-get-type-npm-29.0.0-0b3b41ed86-9abdd11d69.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/jest-matcher-utils-npm-29.1.2-2e9d1c97cd-648afe4349.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/jest-message-util-npm-29.1.2-fde61ad1c5-d1541bd726.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/jest-util-npm-29.1.2-6cc211f8dd-6c55464e20.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/pretty-format-npm-29.1.2-37c8a710ba-b2c6e77666.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/regenerator-runtime-npm-0.13.9-6d02340eec-65ed455fe5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/cache/shell-quote-npm-1.7.3-76a78a6d77-aca58e73a3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/calculator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Counting-in-mind/my-app/package.json",
+    "last_opened_file_path": "D:/Counting-in-mind/my-app/src",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "watcher.settings",
     "ts.external.directory.path": "D:\\program Files\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
@@ -59,7 +98,13 @@
       <workItem from="1665758975392" duration="1083000" />
       <workItem from="1665760112318" duration="3767000" />
       <workItem from="1665763934870" duration="546000" />
-      <workItem from="1665764499642" duration="2182000" />
+      <workItem from="1665764499642" duration="2368000" />
+      <workItem from="1665768053462" duration="3918000" />
+      <workItem from="1665772054045" duration="3795000" />
+      <workItem from="1665775954386" duration="2024000" />
+      <workItem from="1665778287883" duration="1498000" />
+      <workItem from="1665823613798" duration="74000" />
+      <workItem from="1665846765184" duration="4770000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1665656107588</created>
