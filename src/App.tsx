@@ -8,7 +8,6 @@ import { Test } from './components/Test';
 function App() {
   return (
     <div className={s.container}>
-      <Test />
       <Calculator />
       <Theory />
     </div>
