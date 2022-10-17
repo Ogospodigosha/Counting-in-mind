@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/calculator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
       <workItem from="1666000297564" duration="20000" />
       <workItem from="1666033035065" duration="6334000" />
       <workItem from="1666043991797" duration="35000" />
-      <workItem from="1666044186316" duration="2606000" />
+      <workItem from="1666044186316" duration="4050000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1665656107588</created>

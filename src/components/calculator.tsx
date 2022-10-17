@@ -60,8 +60,8 @@ function Calculator() {
 
     const onClickDeleteHandler = () => {
         let currentIndex = inputVal.split('')
-        setInputVal(inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
-        setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal.substring(0, inputVal.length - 1)} : el)) 
+        currentIndex[currentIndex.length-1] !== "=" &&  setInputVal(inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
+        currentIndex[currentIndex.length-1] !== "=" && setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal.substring(0, inputVal.length - 1)} : el))
     }
 
     console.log(inputVal)
