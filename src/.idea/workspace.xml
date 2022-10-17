@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/calculator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/calculator.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/calculator.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +74,13 @@
       <workItem from="1665876220775" duration="516000" />
       <workItem from="1665876872516" duration="392000" />
       <workItem from="1665877364735" duration="210000" />
+      <workItem from="1665909748494" duration="1357000" />
+      <workItem from="1665914256984" duration="12000" />
+      <workItem from="1665936114381" duration="9011000" />
+      <workItem from="1666000297564" duration="20000" />
+      <workItem from="1666033035065" duration="6334000" />
+      <workItem from="1666043991797" duration="35000" />
+      <workItem from="1666044186316" duration="2606000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1665656107588</created>
@@ -96,11 +101,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/components/calculator.jsx" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

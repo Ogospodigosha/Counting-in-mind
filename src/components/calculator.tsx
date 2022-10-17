@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import store from './store';
 import {BiX} from 'react-icons/bi';
 import s from '../scss/calculator.module.scss';
@@ -31,29 +31,41 @@ function Calculator() {
         let taskObj = tasks.find((el, index) => index === count)
         if (taskObj) {
             let task = taskObj.title
-            setInputVal(task )
+            setInputVal(task)
         } else {
             setInputVal("tasks are over")
         }
     }
-    const [inputVal, setInputVal] = useState<any>("");
+
+    const [inputVal, setInputVal] = useState<string>("");
+
 
     const onClickBtn = (value: number | string) => {
-        setInputVal(inputVal + String(value) );
-        setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal+value}: el))
+
+        setInputVal(inputVal + String(value));
+
+        setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal + value} : el))
         // console.log(tasks)
+
     };
 
     const onClickClose = () => {
         setInputVal('');
         // setCount(0)
     };
-     console.log(tasks)
 
-    if(inputVal === "tasks are over" ){
+    if (inputVal === "tasks are over") {
         tasks.map((el, index) => el.title === rezult[index].title ? console.log("КРАСАВЧИК") : console.log("Не красавчик"))
     }
 
+    const onClickDeleteHandler = () => {
+        let currentIndex = inputVal.split('')
+        setInputVal(inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
+        setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal.substring(0, inputVal.length - 1)} : el)) 
+    }
+
+    console.log(inputVal)
+    console.log(tasks)
     return (
         <section className={s.calculator}>
             <div className={s.calculator__display}>
@@ -66,9 +78,12 @@ function Calculator() {
                         {item.val}
                     </button>
                 ))}
-                <button onClick={() => addElement(tasks)} className={s.calculator__numbers} disabled={count > tasks.length}>
+                <button onClick={() => addElement(tasks)} className={s.calculator__numbers}
+                        disabled={count > tasks.length}>
                     Add item
                 </button>
+                <button onClick={onClickDeleteHandler} className={s.calculator__numbers}
+                        disabled={inputVal === "tasks are over"}>&#129092;</button>
             </div>
         </section>
     );

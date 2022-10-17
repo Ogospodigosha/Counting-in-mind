@@ -3,13 +3,15 @@ import React from 'react';
 type ButtonPropsType = {
     callback: ()=>void
     nickName: string
-    setCount: ()=>void
+    set: ()=>void
+    className: string
+    disabled: boolean
 
 }
 export const Button = (props: ButtonPropsType) => {
     const onClickHandler =()=>{
         props.callback()
-        props.setCount()
+        props.set()
 
     }
     return (
