@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/components/Stars.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/calculator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/calculator.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/calculator.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,9 @@
       <workItem from="1666000297564" duration="20000" />
       <workItem from="1666033035065" duration="6334000" />
       <workItem from="1666043991797" duration="35000" />
-      <workItem from="1666044186316" duration="4050000" />
+      <workItem from="1666044186316" duration="4905000" />
+      <workItem from="1666081969073" duration="6879000" />
+      <workItem from="1666101654566" duration="4736000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1665656107588</created>

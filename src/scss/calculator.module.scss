@@ -50,7 +50,16 @@
   &__numbers:hover {
     box-shadow: inset 5px 6px 10px rgba(255, 255, 255, 0.3), inset -5px 4px 10px rgba(0, 0, 0, 0.15);
   }
+.image {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
 
+
+
+}
   &__value {
     position: absolute;
     bottom: 15px;

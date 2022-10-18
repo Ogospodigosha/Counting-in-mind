@@ -3,11 +3,13 @@ import store from './store';
 import {BiX} from 'react-icons/bi';
 import s from '../scss/calculator.module.scss';
 import {v1} from 'uuid';
+import { Stars } from './Stars';
 
 type ObjTask = {
-    id: string;
-    title: string;
+    id: string
+    title: string
 };
+
 
 function Calculator() {
     const [tasks, setTask] = useState([
@@ -53,11 +55,12 @@ function Calculator() {
         setInputVal('');
         // setCount(0)
     };
+    let starArray: Array<string> = [];
 
     if (inputVal === "tasks are over") {
-        tasks.map((el, index) => el.title === rezult[index].title ? console.log("КРАСАВЧИК") : console.log("Не красавчик"))
+        tasks.map((el, index) => el.title === rezult[index].title ? starArray.push('greenStar')  : starArray.push('redStar'))
     }
-
+    console.log(starArray)
     const onClickDeleteHandler = () => {
         let currentIndex = inputVal.split('')
         currentIndex[currentIndex.length-1] !== "=" &&  setInputVal(inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
@@ -71,6 +74,7 @@ function Calculator() {
             <div className={s.calculator__display}>
                 <p className={s.calculator__value}>{inputVal}</p>
                 {inputVal ? <BiX onClick={() => onClickClose()} className={s.calculator__close}/> : ''}
+                <Stars starArray={starArray}/>
             </div>
             <div className={s.calculator__buttons}>
                 {store.buttons.map((item, id) => (
