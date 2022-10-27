@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdd7f749-7726-4177-bc76-529ac0adcc47" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/components/Timer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TimerContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Stars.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Stars.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/calculator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/calculator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1666081969073" duration="6879000" />
       <workItem from="1666101654566" duration="5905000" />
       <workItem from="1666210813657" duration="663000" />
-      <workItem from="1666883346420" duration="5779000" />
+      <workItem from="1666883346420" duration="11486000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1665656107588</created>

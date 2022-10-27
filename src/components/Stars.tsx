@@ -1,4 +1,5 @@
 import React from 'react';
+import { v1 } from 'uuid';
 import s from '../scss/calculator.module.scss';
 type StarsType ={
     starArray: Array<string>
@@ -23,7 +24,7 @@ export const Stars = (props: StarsType) => {
         <>
             {
                 props.starArray.map((el, index) =>{
-                  return  el === 'greenStar' ? <img src={data[0].image} className={s.image}/> : <img src={data[1].image} className={s.image}/>
+                  return  el === 'greenStar' ? <img key={v1()} src={data[0].image} className={s.image}/> : <img key={v1()} src={data[1].image} className={s.image}/>
                 })
             }
         </>

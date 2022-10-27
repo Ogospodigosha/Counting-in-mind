@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import store from './store';
 import {BiX} from 'react-icons/bi';
 import s from '../scss/calculator.module.scss';
@@ -18,7 +18,13 @@ type CalculatorType = {
 }
 
 function Calculator(props: CalculatorType) {
-
+    const initialTask = [
+        {id: v1(), title: `1+1=`},
+        {id: v1(), title: "2+1="},
+        {id: v1(), title: "3+1="},
+        {id: v1(), title: "4+7="},
+        {id: v1(), title: "5+4="}
+    ]
     const [tasks, setTask] = useState([
         {id: v1(), title: `1+1=`},
         {id: v1(), title: "2+1="},
@@ -47,9 +53,6 @@ function Calculator(props: CalculatorType) {
         }
     }
 
-    // const [inputVal, setInputVal] = useState<string>("");
-
-
     const onClickBtn = (value: number | string) => {
 
         props.setInputVal(props.inputVal + String(value));
@@ -61,7 +64,8 @@ function Calculator(props: CalculatorType) {
 
     const onClickClose = () => {
         props.setInputVal('');
-        // setCount(0)
+         setCount(0)
+        setTask(initialTask)
     };
     let starArray: Array<string> = [];
 
@@ -83,14 +87,14 @@ function Calculator(props: CalculatorType) {
     return (
         <section className={s.calculator}>
             <div className={s.calculator__display}>
-                <div style={{marginLeft: "150px"}}> <TimerContainer inputVal={props.inputVal} setInputVal={props.setInputVal}/></div>
+                <div style={{marginLeft: "170px"}}> <TimerContainer inputVal={props.inputVal} setInputVal={props.setInputVal}/></div>
                 <p className={s.calculator__value}>{props.inputVal}</p>
-                {props.inputVal ? <BiX onClick={() => onClickClose()} className={s.calculator__close}/> : ''}
+                {/*{props.inputVal ? <BiX onClick={() => onClickClose()} className={s.calculator__close}/> : ''}*/}
                 <Stars starArray={starArray}/>
             </div>
             <div className={s.calculator__buttons}>
                 {store.buttons.map((item, id) => (
-                    <button onClick={() => onClickBtn(item.val)} key={id} className={s.calculator__numbers}>
+                    <button onClick={() => onClickBtn(item.val)} key={id} className={s.calculator__numbers} disabled={props.inputVal === "tasks are over" || count > tasks.length || props.inputVal === ""}>
                         {item.val}
                     </button>
                 ))}
@@ -100,8 +104,8 @@ function Calculator(props: CalculatorType) {
                 </button>
                 <button onClick={onClickDeleteHandler} className={s.calculator__numbers}
                         disabled={props.inputVal === "tasks are over"}>&#129092;</button>
+                <button className={s.calculator__numbers} onClick={onClickClose} disabled={props.inputVal !== "tasks are over"}><span style={{fontSize: "30px"}}>&#8634;</span></button>
             </div>
-
         </section>
     );
 }
