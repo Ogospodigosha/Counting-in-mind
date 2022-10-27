@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Calculator from './components/calculator';
 import Theory from './components/theory';
-
 import s from './scss/index.module.scss';
-import { Test } from './components/Test';
+
+
 
 function App() {
-  return (
-    <div className={s.container}>
-      <Calculator />
-      <Theory />
-    </div>
-  );
+    const [inputVal, setInputVal] = useState<string>("");
+    return (
+
+        <div className={s.container}>
+            <Calculator setInputVal={setInputVal} inputVal={inputVal}/>
+            <Theory/>
+        </div>
+    );
 }
 
 export default App;

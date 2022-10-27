@@ -3,15 +3,22 @@ import store from './store';
 import {BiX} from 'react-icons/bi';
 import s from '../scss/calculator.module.scss';
 import {v1} from 'uuid';
-import { Stars } from './Stars';
+import {Stars} from './Stars';
+import {TimerContainer} from "./TimerContainer";
+
 
 type ObjTask = {
     id: string
     title: string
 };
 
+type CalculatorType = {
+    setInputVal: (inputVal: string) => void
+    inputVal: string
+}
 
-function Calculator() {
+function Calculator(props: CalculatorType) {
+
     const [tasks, setTask] = useState([
         {id: v1(), title: `1+1=`},
         {id: v1(), title: "2+1="},
@@ -29,51 +36,56 @@ function Calculator() {
     const [count, setCount] = useState(0);
 
     function addElement(tasks: ObjTask[]) {
+
         setCount(count + 1);
         let taskObj = tasks.find((el, index) => index === count)
         if (taskObj) {
             let task = taskObj.title
-            setInputVal(task)
+            props.setInputVal(task)
         } else {
-            setInputVal("tasks are over")
+            props.setInputVal("tasks are over")
         }
     }
 
-    const [inputVal, setInputVal] = useState<string>("");
+    // const [inputVal, setInputVal] = useState<string>("");
 
 
     const onClickBtn = (value: number | string) => {
 
-        setInputVal(inputVal + String(value));
+        props.setInputVal(props.inputVal + String(value));
 
-        setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal + value} : el))
+        setTask(tasks.map(el => el.title === props.inputVal ? {...el, title: props.inputVal + value} : el))
         // console.log(tasks)
 
     };
 
     const onClickClose = () => {
-        setInputVal('');
+        props.setInputVal('');
         // setCount(0)
     };
     let starArray: Array<string> = [];
 
-    if (inputVal === "tasks are over") {
-        tasks.map((el, index) => el.title === rezult[index].title ? starArray.push('greenStar')  : starArray.push('redStar'))
+    if (props.inputVal === "tasks are over") {
+        tasks.map((el, index) => el.title === rezult[index].title ? starArray.push('greenStar') : starArray.push('redStar'))
     }
     console.log(starArray)
     const onClickDeleteHandler = () => {
-        let currentIndex = inputVal.split('')
-        currentIndex[currentIndex.length-1] !== "=" &&  setInputVal(inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
-        currentIndex[currentIndex.length-1] !== "=" && setTask(tasks.map(el => el.title === inputVal ? {...el, title: inputVal.substring(0, inputVal.length - 1)} : el))
+        let currentIndex = props.inputVal.split('')
+        currentIndex[currentIndex.length - 1] !== "=" && props.setInputVal(props.inputVal.split('').filter((el, index) => index < (currentIndex.length - 1)).join(''))
+        currentIndex[currentIndex.length - 1] !== "=" && setTask(tasks.map(el => el.title === props.inputVal ? {
+            ...el,
+            title: props.inputVal.substring(0, props.inputVal.length - 1)
+        } : el))
     }
 
-    console.log(inputVal)
+    console.log(props.inputVal)
     console.log(tasks)
     return (
         <section className={s.calculator}>
             <div className={s.calculator__display}>
-                <p className={s.calculator__value}>{inputVal}</p>
-                {inputVal ? <BiX onClick={() => onClickClose()} className={s.calculator__close}/> : ''}
+                <div style={{marginLeft: "150px"}}> <TimerContainer inputVal={props.inputVal} setInputVal={props.setInputVal}/></div>
+                <p className={s.calculator__value}>{props.inputVal}</p>
+                {props.inputVal ? <BiX onClick={() => onClickClose()} className={s.calculator__close}/> : ''}
                 <Stars starArray={starArray}/>
             </div>
             <div className={s.calculator__buttons}>
@@ -83,12 +95,13 @@ function Calculator() {
                     </button>
                 ))}
                 <button onClick={() => addElement(tasks)} className={s.calculator__numbers}
-                        disabled={count > tasks.length}>
+                        disabled={count > tasks.length || props.inputVal === "tasks are over"}>
                     Add item
                 </button>
                 <button onClick={onClickDeleteHandler} className={s.calculator__numbers}
-                        disabled={inputVal === "tasks are over"}>&#129092;</button>
+                        disabled={props.inputVal === "tasks are over"}>&#129092;</button>
             </div>
+
         </section>
     );
 }
